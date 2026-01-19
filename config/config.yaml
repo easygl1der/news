@@ -326,14 +326,14 @@ notification:
   # 💡 想要精准定时？建议使用 Docker 部署在个人服务器上
   push_window:
     enabled: false                    # 是否启用推送时间窗口控制
-    start: "20:00"                    # 开始时间（北京时间）
-    end: "22:00"                      # 结束时间（北京时间）
+    start: "9:00"                    # 开始时间（北京时间）
+    end: "23:00"                      # 结束时间（北京时间）
     once_per_day: true                # true=窗口内只推送一次，false=窗口内每次执行都推送
 
   # 推送渠道配置
   channels:
     feishu:
-      webhook_url: ""                 # 飞书机器人 webhook URL
+      webhook_url: "https://www.feishu.cn/flow/api/trigger-webhook/f34063cd5734effb505db213ea6720f1"                 # 飞书机器人 webhook URL
 
     dingtalk:
       webhook_url: ""                 # 钉钉机器人 webhook URL
